@@ -53,7 +53,7 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[43.00884527955609,-89.59569518909096],[43.15727588660397,-89.01081281575567]]);
+        }).fitBounds([[42.98660466687448,-89.71533013544003],[43.16547736319629,-89.00981350089373]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -214,7 +214,7 @@
                 case 'pending':
                     return {
                 pane: 'pane_RandomPoints_2',
-                radius: 10.000000000000002,
+                radius: 10.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -230,7 +230,7 @@
                 case 'complete':
                     return {
                 pane: 'pane_RandomPoints_2',
-                radius: 10.000000000000002,
+                radius: 10.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
@@ -246,7 +246,7 @@
                 case 'inaccessible':
                     return {
                 pane: 'pane_RandomPoints_2',
-                radius: 10.000000000000002,
+                radius: 10.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
