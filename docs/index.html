@@ -175,11 +175,11 @@
             });
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">id</th>\
+                        <th scope="row">Photo Number</th>\
                         <td>' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">date_comp</th>\
+                        <th scope="row">Date Taken</th>\
                         <td>' + (feature.properties['date_comp'] !== null ? autolinker.link(String(feature.properties['date_comp']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
@@ -191,8 +191,7 @@
                         <td>' + (feature.properties['lon'] !== null ? autolinker.link(String(feature.properties['lon']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">web_path</th>\
-                        <td>' + (feature.properties['web_path'] !== null ? '<img src="images/' + String(feature.properties['web_path']).replace(/[\\/:]/g, '_').trim().replace(/'/g, '\'').replace(/"/g, '&quot;') + '">' : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['web_path'] !== null ? '<img src="images/' + String(feature.properties['web_path']).replace(/[\\/:]/g, '_').trim().replace(/'/g, '\'').replace(/"/g, '&quot;') + '">' : '') + '</td>\
                     </tr>\
                     <tr>\
                         <th scope="row">Camera</th>\
