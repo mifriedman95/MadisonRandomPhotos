@@ -138,31 +138,32 @@
         function pop_RandomPoints_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">id</th>\
+                        <td>' + (feature.properties['id'] !== null ? autolinker.link(String(feature.properties['id']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['date_gen'] !== null ? autolinker.link(String(feature.properties['date_gen']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">date_comp</th>\
+                        <td>' + (feature.properties['date_comp'] !== null ? autolinker.link(String(feature.properties['date_comp']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['status'] !== null ? autolinker.link(String(feature.properties['status']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">lat</th>\
+                        <td>' + (feature.properties['lat'] !== null ? autolinker.link(String(feature.properties['lat']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['date_comp'] !== null ? autolinker.link(String(feature.properties['date_comp']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">lon</th>\
+                        <td>' + (feature.properties['lon'] !== null ? autolinker.link(String(feature.properties['lon']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['lat'] !== null ? autolinker.link(String(feature.properties['lat']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">web_path</th>\
+                        <td>' + (feature.properties['web_path'] !== null ? '<img src="images/' + String(feature.properties['web_path']).replace(/[\\/:]/g, '_').trim().replace(/'/g, '\'').replace(/"/g, '&quot;') + '">' : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['lon'] !== null ? autolinker.link(String(feature.properties['lon']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Camera</th>\
+                        <td>' + (feature.properties['Camera'] !== null ? autolinker.link(String(feature.properties['Camera']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['web_path'] !== null ? autolinker.link(String(feature.properties['web_path']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Camera'] !== null ? autolinker.link(String(feature.properties['Camera']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Film'] !== null ? autolinker.link(String(feature.properties['Film']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">Film</th>\
+                        <td>' + (feature.properties['Film'] !== null ? autolinker.link(String(feature.properties['Film']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
